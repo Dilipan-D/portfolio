@@ -94,6 +94,7 @@ nav ul li a:hover::after {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+
 }
 
 .about-col-1 {
@@ -119,7 +120,7 @@ nav ul li a:hover::after {
 }
 
 .about-col-2 {
-    flex-basis: 60%;
+    flex-basis: 55%;
 }
 
 .sub-title {
@@ -497,4 +498,10 @@ nav .fa-solid {
         flex-basis: 100%;
     }
 
+}
+
+#msg {
+    color: rgb(115, 204, 115);
+    margin-top: -40px;
+    display: block;
 }
