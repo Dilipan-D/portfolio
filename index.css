@@ -10,20 +10,22 @@ html {
 }
 
 body {
-    background-color: rgb(0, 0, 0);
-    color: rgb(255, 255, 255);
+    background-color: rgb(214, 209, 205);
+    color: rgb(8, 8, 8);
 }
 
 #header {
     width: 100%;
     height: 100vh;
-    background-image: url(images/Bg.png);
-    background-position: center;
+    background-image: url(images/new.jpg);
+    background-position: top right;
     background-size: cover;
+
 }
 
 .container {
     padding: 10px 10%;
+
 }
 
 /*-------------------Home_Start------------------------*/
@@ -38,14 +40,15 @@ nav ul li {
     display: inline-block;
     list-style: none;
     margin: 10px 20px;
+
 }
 
 nav ul li a {
     text-decoration: none;
-    color: rgb(251, 251, 251);
+    color: rgb(8, 8, 8);
     font-weight: 600;
     font-size: 18px;
-    text-shadow: 0 2px 4px rgb(1, 1, 1);
+    text-shadow: 0 2px 4px rgb(250, 250, 250);
     position: relative;
 }
 
@@ -68,12 +71,13 @@ nav ul li a:hover::after {
     margin-top: 13%;
     margin-left: 10%;
     font-size: 30px;
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
 }
 
 .header-text h1 {
-    font-size: 60px;
+    font-size: 300%;
     margin-top: 20px;
+
 }
 
 .header-text h1 span {
@@ -89,16 +93,29 @@ nav ul li a:hover::after {
 .row {
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap
+    flex-wrap: wrap;
 }
 
 .about-col-1 {
     flex-basis: 35%;
+    background: rgb(125, 122, 122);
+    border-top-left-radius: 200px;
+    border-bottom-right-radius: 200px;
+    overflow: hidden;
+    transition: background 0.5s;
 }
 
 .about-col-1 img {
     width: 100%;
-    border-radius: 20px;
+    height: 80%;
+    margin-top: 130px;
+    padding-left: 90px;
+    border-top-left-radius: 200px;
+    border-bottom-right-radius: 200px;
+}
+
+.about-col-1:hover {
+    background: rgb(33, 75, 33);
 }
 
 .about-col-2 {
@@ -108,6 +125,7 @@ nav ul li a:hover::after {
 .sub-title {
     font-size: 60px;
     font-weight: 600;
+    text-shadow: 0 2px 4px white;
 }
 
 .about-col-2 h1 {
@@ -176,9 +194,10 @@ nav ul li a:hover::after {
 }
 
 .services-list div {
-    background-color: gray;
+    background-color: rgb(81, 81, 81);
     padding: 40px;
     font-size: 13px;
+    color: rgb(255, 255, 255);
     font-weight: 300;
     border-radius: 10px;
     transition: background 0.5s, transform 0.5s;
@@ -197,14 +216,14 @@ nav ul li a:hover::after {
 
 .services-list div a {
     text-decoration: none;
-    color: white;
+    color: #F5F7D2;
     font-size: 12px;
     margin-top: 20px;
     display: inline-block;
 }
 
 .services-list div:hover {
-    background-color: rgb(48, 98, 48);
+    background-color: rgb(33, 75, 33);
     transform: translateY(-10px)
 }
 
@@ -237,7 +256,7 @@ nav ul li a:hover::after {
 .layer {
     width: 100%;
     height: 0;
-    background: linear-gradient(rgba(0, 0, 0, 0.685), rgb(48, 98, 48));
+    background: linear-gradient(rgba(0, 0, 0, 0.685), rgb(33, 75, 33));
     border-radius: 10px;
     position: absolute;
     left: 0;
@@ -250,6 +269,7 @@ nav ul li a:hover::after {
     padding: 0 40px;
     flex-direction: column;
     font-size: 14px;
+    color: white;
     transition: height 0.5s;
 }
 
@@ -260,7 +280,7 @@ nav ul li a:hover::after {
 
 .layer a {
     margin-top: 20px;
-    color: rgb(48, 98, 48);
+    color: rgb(33, 75, 33);
     text-decoration: none;
     font-size: 18px;
     line-height: 60px;
@@ -284,15 +304,17 @@ nav ul li a:hover::after {
     display: block;
     margin: 50px auto;
     width: fit-content;
-    border: 1px solid rgb(48, 98, 48);
+    border: 1px solid rgb(33, 75, 33);
     padding: 14px 50px;
-    color: white;
+    color: rgb(255, 253, 253);
+    background-color: rgb(95, 93, 86);
     border-radius: 6px;
     transition: background 0.5s;
 }
 
 .btn:hover {
-    background: rgb(48, 98, 48);
+    background: rgb(33, 75, 33);
+
 }
 
 /*-------------------My_Work_End------------------------*/
@@ -313,7 +335,7 @@ nav ul li a:hover::after {
 .contact-left p i {
     margin-right: 5px;
     font-size: 21px;
-    color: rgb(48, 98, 48);
+    color: rgb(33, 75, 33);
 }
 
 .social-icons {
@@ -324,19 +346,19 @@ nav ul li a:hover::after {
     text-decoration: none;
     margin-right: 15px;
     font-size: 30px;
-    color: rgb(242, 139, 139);
+    color: rgb(113, 109, 109);
     display: inline-block;
     transition: transform 0.5s;
 }
 
 .social-icons a:hover {
-    color: rgb(48, 98, 48);
+    color: rgb(249, 108, 95);
     transform: translateY(-5px);
 }
 
 .btn.btn2 {
     display: inline-block;
-    background-color: rgb(48, 98, 48);
+    background-color: rgb(33, 75, 33);
 }
 
 form input,
@@ -348,8 +370,8 @@ form textarea {
     padding: 15px;
     font-size: 18px;
     border-radius: 6px;
-    background: rgba(132, 133, 132, 0.39);
-    color: rgb(245, 245, 245);
+    background: rgba(148, 141, 141, 0.39);
+    color: rgb(0, 0, 0);
 }
 
 form .btn2 {
@@ -364,7 +386,7 @@ form .btn2 {
     padding: 10px 0;
     font-weight: 300;
     margin-top: 20px;
-    background: rgba(132, 133, 132, 0.39);
+    background: rgba(58, 57, 57, 0.628);
     letter-spacing: 2px;
     color: rgba(153, 216, 153, 0.568);
 }
@@ -383,13 +405,15 @@ nav .fa-solid {
 
 @media only screen and (max-width: 600px) {
     #header {
-        background-image: url(images/sample3.png);
+        background-image: url(images/New5.jpg);
         background-size: cover;
     }
 
     .header-text {
-        margin-top: 100%;
+        margin-top: 70%;
+        margin-left: 10px;
         font-size: 16px;
+
     }
 
     .header-text h1 {
@@ -419,11 +443,17 @@ nav .fa-solid {
         font-size: 25px;
     }
 
+    nav ul li a {
+        color: white;
+        text-shadow: 0 2px 4px black;
+    }
+
     nav ul .fa-solid {
         position: absolute;
         top: 25px;
         right: 25px;
         cursor: pointer;
+        color: white;
     }
 
     .sub-title {
@@ -433,6 +463,20 @@ nav .fa-solid {
     .about-col-1,
     .about-col-2 {
         flex-basis: 100%;
+    }
+
+    .about-col-1 {
+        background: rgb(125, 122, 122);
+        border-top-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        overflow: hidden;
+    }
+
+    .about-col-1 img {
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        height: 100%;
     }
 
     .about-col-1 {
